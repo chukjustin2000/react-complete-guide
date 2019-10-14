@@ -59,12 +59,12 @@ class App extends React.Component {
     if (this.state.showPerson) {
       persons = (
         <div>
-          {this.state.persons.map((p, index) => {
+          {this.state.persons.map((person, index) => {
             return (
               <Person
                 click={() => this.deletePersonHandler(index)}
-                name={p.name}
-                age={p.age}
+                name={person.name}
+                age={person.age}
               />
             );
           })}
