@@ -14,9 +14,21 @@ class App extends React.Component {
     showPerson: false
   };
 
-  deletePersonHandler = index => {
+  // switchNameHandler = newName => {
+  //   //console.log('Was clicked!');
+  //   this.setState({
+  //     persons: [
+  //       { name: newName, age: '40' },
+  //       { name: 'Uche', age: '31' },
+  //       { name: 'Ify', age: '34' },
+  //       { name: 'Chizo', age: '33' }
+  //     ]
+  //   });
+  // };
+
+  deletePersonHandler = personIndex => {
     const persons = [...this.state.persons];
-    persons.splice(index, 1);
+    persons.splice(personIndex, 1);
     this.setState({ persons: persons });
   };
 
