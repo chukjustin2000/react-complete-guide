@@ -73,11 +73,8 @@ class App extends React.Component {
                 click={() => this.deletePersonHandler(index)}
                 name={person.name}
                 age={person.age}
-<<<<<<< HEAD
                 key={person.id}
                 changed={event => this.nameChangedHandler(event, person.id)}
-=======
->>>>>>> 4e7f1d988d6cddfb0e25a3a7c2628861a44a798e
               />
             );
           })}
